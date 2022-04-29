@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+	/* 
+		마우스 이벤트
+		- mouseout() : 마우스가 해당 버튼 영역을 벗어났을때 이벤트가 발생. 
+					형식) $("요소선택").on("mouseout",function(){....});
+							$("요소선택").mouseout(function(){....});
+		- mouseover() : 마우스가 해당 버튼 영역에 올라갔을 때 이벤트가 발생. 
+					형식) $("요소선택").on("mouseover",function(){....});
+					$("요소선택").mouseover(function(){....});
+			
+		- hover() : mouseout / mouseover가 합쳐진 이벤트.
+					형식) $("요소선택").hover(function(){....},===>마우스가 올라갔을 대 이벤트
+											function(){....},===>마우스가 내려갔을 대 이벤트
+							);
+	*/
+	
+	$(function(){
+		// 마우스가 버튼 영역 위에 올라갔을 때 이벤트 
+		$(".btn1").on("mouseover",function(){
+			$("p").css("background-color","pink");
+		});
+		
+		// 마우스가 버튼 영역을 벗어났을 때 이벤트
+		$(".btn1").mouseout(function(){
+			$("p").css("background-color","lightgray");
+		})
+		
+		// hover() : mouseout / mouseover가 합쳐진 이벤트.
+		$(".btn2").hover(
+			function(){ //마우스가 올라갔을 때 이벤트
+			 $("p").css("border","3px solid red");	
+			},
+			
+			function(){ //마우스가 내려갔을 때 이벤트
+			 $("p").css("background-color","yellow");
+			})
+	})
+</script>
+
+</head>
+<body>
+	<button class="btn1">moseover/out</button>
+
+	<button class="btn2">hover</button>
+	
+	<p>내용 </p>
+
+</body>
+</html>

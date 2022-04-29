@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+	/*
+		요소편집 메서드
+		-empty() : 선택한 요소의 하위 내용들을 모두 삭제하는 메서드
+				형식) $("요소선택").empty(); 
+				
+		-remove() : 선택한 요소르 삭제하는 메서드.
+				형식) $("요소선택").remove();
+	*/
+
+	$(function(){
+		$(".line_1").empty();
+		
+		$(".line_2").remove();
+	});
+
+</script>
+
+<style type="text/css">
+
+.line_1{
+	background-color:yellow;
+}
+
+.line_2{
+	background-color:orange;
+}
+
+</style>
+
+</head>
+<body>
+	<h1>요소 편집 메서드</h1>
+	
+	<ul>
+	
+		<li class="line_1">내용1</li>
+	
+		<li class="line_2">내용2</li>
+	
+	</ul>
+	
+</body>
+</html>

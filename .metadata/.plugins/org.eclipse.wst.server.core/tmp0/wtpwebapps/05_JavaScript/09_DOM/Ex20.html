@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+	onload = function(){
+		
+		// 문서 중에서 div 태그를 찾아보자
+		let divs = document.getElementsByTagName("div");
+		
+		console.log("문서 내 div 태그 갯수 >>> "+divs.length);
+		
+		for(let i=0;i<divs.length; i++){
+			divs[i].style.border = "1px solid red";
+		}
+		
+	}
+
+</script>
+</head>
+<body>
+	<div id="sample_page" class="page">
+	샘플페이지(div, id="sample_page" class="page")
+	<div id="header">
+		헤더영역(div, id="header")
+	
+	</div><!-- id="header" end -->
+	
+	<div id="content" clss="sample_content">
+		콘텐트 영역(id="content" class="sample_content")
+	
+		<div>
+			JavaScript란(div)
+			<p id="data_1"> 자바스크립트 Core(p, id="data_1") </p>
+			<p id="data_2"> 자바스크립트 Core(p, id="data_2") </p>
+			<p id="data_3"> 자바스크립트 Core(p, id="data_3") </p>
+			을 배운다는 것
+	</div>
+		
+		
+		<div class="content_data">
+			JavaScript에서 배울 내용(div, class="content_data")
+			<p>1. JavaScript DOM(p)</p>
+			<p>2. JavaScript Ajax(p)</p>
+		</div> <!-- class="content_data" -->
+		
+		<div class="content_data">
+			JavaScript에서 배울 내용(div, class="content_data")
+			<p>1. JavaScript DOM(p)</p>
+			<p>2. JavaScript Ajax(p)</p>
+		</div> <!-- class="content_data" -->
+		
+		
+	
+		
+
+		
+	</div> <!-- id="content" class="sample_content" end -->
+		<div id="footer">
+			푸터영역(div, id="footer")
+		</div> <!-- id="footer" end -->
+	
+	</div> <!-- id="sample_page" class="page" end-->
+</body>
+</html>

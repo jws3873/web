@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	//동적으로 객체를 생성하는 방법
+	
+	let product = {};
+	
+	product.productname = prompt("제품명을 입력하세요.");
+	product.pInput_price = prompt("제품 입고가를 입력하세요.");
+	product.pOutput_price = prompt("제품 출고가를 입력하세요.");
+	product.productCompany = prompt("제품 제조사를 입력하세요.");
+	
+	document.write(`<hr>`);;
+	
+	document.write(`<ul>`);
+	for(let k in product)
+	document.write(`<li>${k} : ${product[k]}</li><br>`);
+		
+	document.write(`</ul>`);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

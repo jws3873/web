@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+#join_wrap{
+	width: 310px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.join_title{
+	margin: 8px auto;
+	width: 150px;
+	font-size: 18px;
+	text-align: center;
+	color: skyblue;
+}
+
+hr{
+	width: 80%;
+}
+
+.join_require{
+	color: white;
+	background-color: skyblue;
+	border-radius: 5px;
+}
+
+.join_menu{
+	width: 120px;
+	margin: 0 auto;
+	padding-top: 8px;
+}

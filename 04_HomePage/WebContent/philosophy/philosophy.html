@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<title>데카르트 홈페이지</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+
+	function login_window() {
+		// window.open("파일경로명", "창이름", "가로폭/세로높이")
+		open("../login/login.html", "로그인", "width=380px, height=250px");
+	}
+
+</script>
+</head>
+<body>
+
+	<div id="container">
+		<header id="head">  <!-- 웹 문서의 상단 영역 -->
+		   <div id="login">
+		      <a href="../index.html">홈</a>
+		      <a href="#" onclick="login_window()">로그인</a>
+		      <a href="#" onclick="join_window()">회원가입</a>
+		   </div> <!-- id="login" end -->
+		   
+		   <hgroup> <!-- 제목과 부제목을 그룹으로 묶어주는 역할 -->
+		   	  <h1>데카르트, 서양 근대철학의 창시자</h1>
+		   	  <h2>Rene Decartes, 1596~1650</h2>
+		   </hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id="navi">
+			<ul>
+			   <li><a href="../birth/birth.html">탄 생</a></li>			
+			   <li><a href="../writing/writing.html">저 서</a></li>			
+			   <li><a href="../philosophy/philosophy.html">철 학</a></li>			
+			   <li><a href="../saying/saying.html">명 언</a></li>						
+			</ul>
+		</nav>
+		
+		<!-- 웹 문서의 영역 설정 태그 - section 태그는 여러 번 사용 가능. -->
+		<section id="content">
+			<h2>데카르트 철학</h2>
+			<article> <!-- 문서의 본문 영역 -->
+				<br>
+				<img src="../images/book3.jpg" align="right">
+				 <p>데카르트는 《방법서설》(1637)에서 철학을 맛보기로 다루었고, 1641년에</p>
+	             <p>출판한《성찰(Meditations on First Philosophy, 원제: 제1철학에 관한 성찰)》</p>
+	             <p>에서 무려 700쪽이 넘는 방대한 양으로 '주체성의 철학'을 다루었다.</p>
+	             <p> 《방법서설》의 첫 부분을 쉽게 쓴 것으로 보아서 《성찰》이라는 책도</p>
+	             <p>읽어볼 만하다는 느낌을 받았다.</p>
+	             <p>《방법서설》은 본래 500쪽이 넘는 분량이며 대부분 과학에 관한 논문이지만</p>
+	             <p> 철학적 방법에 관해서 논의한 앞의 78쪽 정도를 우리가 흔히  《방법서설》로</p>
+	             <p>번역해서 읽고 있다. 그런데 글이 쉽다. '정신의 자서전' 이라고 불릴 만큼</p>
+	             <p> 자기가 진리를 추구해온 이야기를 나열하고 있기 때문에 누구나 읽을 수</P> 
+	             <p> 있을 만큼 쉽다는 사실에 놀랐다. 이 책의 원래 제목은 '이성을 바르게</p> 
+	             <p>이끌고 여러 학문의 진리를 탐구하기 위한 방법서설 그리고 이 방법에</p> 
+	             <p> 관한 에세이들인 굴절광학, 기상학 및 기하학'이다.</p>
+			</article>
+		</section>
+		
+		<!-- 문서의 보조 내용(알림, 광고) -->
+		<aside id="sidebar">
+			<h3 align="center">◐저서 구입◑</h3>
+			<p>저서 구입을 원하시는 분들은 전화 010-1111-1234로
+			   연락 주시기 바랍니다.</p>
+			   <img src="../images/book1.png" width="130" height="160">
+			   <img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		<!-- 문서의 하단 내용 -->
+		<footer id="foot">
+			<p>글 : 임 정 훈 / 저술가, 번역가</p>
+			<address>E-mail : jhehun@empas.com</address>
+			<p>Copyright &copy All right reserved</p>
+		</footer>
+	
+	</div> <!-- class="container" end -->
+
+</body>
+</html>

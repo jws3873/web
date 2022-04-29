@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	/* 
+		[문제] 학생에 대한 정보를 키보드로 입력을 받아서 
+			해당 입력받은 정보를 화면에 보여주세요.
+			(입력 정보: 이름, 학번, 학과, 연락처, 주소)
+	*/
+	
+	let studentInfo={};
+	
+	studentInfo.name=prompt("이름을 입력하세요.");
+	studentInfo.hakbun=prompt("학번을 입력하세요.");
+	studentInfo.major=prompt("학과를 입력하세요.");
+	studentInfo.phone=prompt("연락처를 입력하세요.");
+	studentInfo.addr=prompt("주소 입력하세요.");
+	
+	document.write(`입력 정보 : `);
+	for(let k in studentInfo){
+		document.write(`${studentInfo[k]}, `);
+	}
+	
+	document.write(`<hr>`);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

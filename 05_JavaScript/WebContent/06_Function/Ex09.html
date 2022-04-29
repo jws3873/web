@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	/*
+		setInterval() 함수는 지속적으로 실행이 되므로 
+		컴퓨터의 자원을 소비하게 됨.
+		따라서 지속적으로 실행이 되는 것을 막기 위하여
+		clearInterval()함수를 사용해야 함.
+	*/
+	
+	let intervalID = setInterval(function(){
+		document.write("<p>"+new Date()+"</p>");
+	},2000);
+	
+	// 1 분 후에 clearInterval() 함수를 호출하여 
+	// setInterval()함수를 종료시켜야 한다.
+	setTimeout(function(){
+		clearInterval(intervalID); //사용자 정의 함수에 넣어서 사용해야 한다?
+	},10000);
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

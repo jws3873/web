@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<title>데카르트 홈페이지</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+
+	function login_window() {
+		// window.open("파일경로명", "창이름", "가로폭/세로높이")
+		open("../login/login.html", "로그인", "width=380px, height=250px");
+	}
+
+</script>
+</head>
+<body>
+
+	<div id="container">
+		<header id="head">  <!-- 웹 문서의 상단 영역 -->
+		   <div id="login">
+		      <a href="../index.html">홈</a>
+		      <a href="#" onclick="login_window()">로그인</a>
+		      <a href="#" onclick="join_window()">회원가입</a>
+		   </div> <!-- id="login" end -->
+		   
+		   <hgroup> <!-- 제목과 부제목을 그룹으로 묶어주는 역할 -->
+		   	  <h1>데카르트, 서양 근대철학의 창시자</h1>
+		   	  <h2>Rene Decartes, 1596~1650</h2>
+		   </hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id="navi">
+			<ul>
+			   <li><a href="../birth/birth.html">탄 생</a></li>			
+			   <li><a href="../writing/writing.html">저 서</a></li>			
+			   <li><a href="../philosophy/philosophy.html">철 학</a></li>			
+			   <li><a href="../saying/saying.html">명 언</a></li>						
+			</ul>
+		</nav>
+		
+		<!-- 웹 문서의 영역 설정 태그 - section 태그는 여러 번 사용 가능. -->
+		<section id="content">
+			<h2>데카르트 탄생</h2>
+			<article> <!-- 문서의 본문 영역 -->
+			   <h3>1596년 3월 31일 법관 귀족 가문에서 태어나다...</h3>
+			   <p>데카르트는 1596년 3월 31일 투렌 지방(Touraine)의 투르 인근에 있는 
+			           소도시 라에의 법관 귀족 가문에서 </p>
+			   <p>태어났다. 그의 아버지는 브르타뉴 지역 렌(Renne)시의 시의원이었으며, 
+			           어머니는 그가 태어난 지 14달이 못</p> 
+			   <p>되어 세상을 떠났다. 이 후 그는 외할머니 밑에서 자랐고, 어린 시절 몸이 
+			           무척 허약했다고 한다.</p>
+			   <p> 1606년 그는 예수회가 운영하는 라 플레쉬 콜레주(Collège la Flèche)에 
+                                  입학하여 1614년까지 8년간에 걸쳐</p> 
+               <p>철저하게 중세식 그리고 인본주의 교육을 받았다. 5년간 라틴어, 수사학, 
+                                 고전 작가 수업을 받았고 3년간</p>
+               <p> 변증론에서 비롯하여 자연철학, 형이상학 그리고 윤리학을 포괄하는 철학 수업을 받았다. 
+                                   그가 이 시기에 받은</p>
+               <p> 교육은 후에 그의 저서 여기저기에 흔적을 남기게 되는데 특히 《방법서설》에 많은 
+                                   영향을 끼쳤다.</p>
+			   <br>
+               <p>데카르트는 수학자로서도 유명하지만 철학자로의 삶도 살았다. 데카르트는 가장 확실하고 
+                                 의심할 여지가 없는</p>
+               <p> 진리를 찾으려 했다. 그래서 택한 방법이 진리가 아닌 것들을 소거하는 것인데, 그 방법은 
+                                   저서 《방법서설》에</p>
+               <p> 잘 나타나 있다.</p>
+			   </article>
+		</section>
+		
+		<!-- 문서의 보조 내용(알림, 광고) -->
+		<aside id="sidebar">
+			<h3 align="center">◐저서 구입◑</h3>
+			<p>저서 구입을 원하시는 분들은 전화 010-1111-1234로
+			   연락 주시기 바랍니다.</p>
+			   <img src="../images/book1.png" width="130" height="160">
+			   <img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		<!-- 문서의 하단 내용 -->
+		<footer id="foot">
+			<p>글 : 임 정 훈 / 저술가, 번역가</p>
+			<address>E-mail : jhehun@empas.com</address>
+			<p>Copyright &copy All right reserved</p>
+		</footer>
+	
+	</div> <!-- class="container" end -->
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	/* 
+		콘텐츠 탐색 선택자 : 요소 또는 속성의 포함 여부에 따라 특정 요소를 선택하는 선택자.
+		- $("요소선택:contains(텍스트)")
+		: 텍스트를 포함하는 요소만 선택하는 선택자.
+		
+		- $("요소선택").contents()
+		: 선택한 요소 중 가장 가까운 하위 요소를 선택하는 선택자.
+		
+		-$("요소선택:has(요소명)") /$("요소선택").has(요소명)
+		: 요소 중 요소명을 포함하는 요소만 선택하는 선택자.
+		
+		-$("요소선택:not (제외요소)")/$("요소선택").not(제외요소)
+		: 제외요소만 제외하고 선택하는 선택자.
+	
+	*/
+	
+	$(function(){
+		//$("요소선택:contains(텍스트)")
+		$("#in_1 p:contains(contains)").css("background-color","lightgray");
+		
+		//$("요소선택").contents()
+		$("#wrap").contents().css("border","1px solid blue");
+		
+		//$("요소선택:has(요소명)") /$("요소선택").has(요소명)
+		$("#in_1 p:has(span)")
+			.css("border","1px solid red");
+		$("#in_2 p:not(:first)")
+				.css("background-color","lightblue");
+		
+	});
+
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>콘텐츠 탐색 선택자.</h1>
+		<section id="in_1">
+			<h1>contains(),contents(),has()</h1>
+			<p> <span>contains</span> </p>
+			
+			<p> <span>contents</span> </p>
+			
+			<p> <span>has</span> </p>
+		</section>
+		
+		<section id="in_2">
+			<h1>not(), end()</h1>
+			<p> <span>not()</span> </p>
+			
+			<p> <span>end()</span> </p>
+			
+			<p> <span>선택자 end</span> </p>
+		</section>
+	
+	</div>
+</body>
+</html>

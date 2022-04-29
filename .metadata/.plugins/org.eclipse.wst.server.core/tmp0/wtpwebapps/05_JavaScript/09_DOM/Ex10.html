@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	window.onload=function(){
+		
+		
+		// 문서에서 특정 클래스가 적용된 노드를 찾기
+		let img1= document.getElementsByClassName("img_1");
+		
+		console.log(img1.length);
+		
+		for(let i=0;i<img1.length;i++){
+			document.body.removeChild(img1[i]);
+		}
+	}
+
+</script>
+
+</head>
+<body>
+
+	<img class="img_1" src="../images/apple.jpg">
+
+</body>
+</html>

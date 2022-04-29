@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	window.onload = function(){
+		
+		let p_element = document.createElement("p");
+		
+		let p_text = document.createTextNode("안녕하세요"); //textNode에는 스타일을 적용할 수 없다.
+		
+		p_element.appendChild(p_text);
+
+		/* p_element.style.color = "red"; */
+		
+		let mydiv = document.querySelector("#myDiv");
+		
+		mydiv.appendChild(p_element);
+		
+		
+		mydiv.style.color="red";
+		
+		
+	}
+
+
+</script>
+</head>
+<body>
+
+	<div id="myDiv">
+	
+		<!-- [문제] 아래와 같이 DOM을 이용하여 화면을 출력해 보세요.
+			<p>안녕하세요</p>
+			조건) "안녕하세요" 라는 글자는 빨간색으로 처리. -->
+	
+	
+	</div>
+	
+</body>
+</html>

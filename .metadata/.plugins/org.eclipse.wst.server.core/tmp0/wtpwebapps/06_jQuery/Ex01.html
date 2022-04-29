@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+
+	/* 
+		제이쿼리 진입점 - 문서의 body 부분을 읽고 난 후 제이쿼리를 실행하라는 의미 코드.
+		1. JQuery(document).ready(function(){코드;});
+		2. JQuery(function(){코드;});
+		3. $(document).ready(function(){코드;}) ==> 표준 진입점
+		4. $(function(){코드;});
+		
+		제이쿼리 동작 방법 
+		형식) $(선택자).동작 함수 ("속성","값");
+	
+	*/
+	
+	// 자바스크립트를 이용하여 DOM을 조작해 보자.
+	/* onload= function(){
+		let h_elements = document.getElementsByTagName("h2");
+		
+		console.log(`h2 태그의 갯수 >>>${h_elements.length}`);
+		
+		for(let i = 0; i<h_elements.length;i++){
+			h_elements[i].style.color = "red";
+		}
+	} */
+	
+	// 문서의 body 부분을 읽고 제이쿼리를 실행을 하는 의미
+	$(function(){
+		$("h2").css("color","red");
+	})
+
+
+</script>
+</head>
+<body>
+
+	<h2>Header1</h2>
+	
+	<h2>Header2</h2>
+	
+	<h2>Header3</h2>
+	
+	<h2>Header4</h2>
+	
+	<h2>Header5</h2>
+
+</body>
+</html>

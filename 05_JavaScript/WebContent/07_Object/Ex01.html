@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	//자바스크립트에서 객체 생성 방법
+	let product = {
+					name: "Galaxy S22",
+					type: "핸드폰",
+					company: "삼성"
+	};
+	
+	document.write("제품 이름 >>>"+product["name"]+"<br>");
+	document.write("제품 타입 >>>"+product["type"]+"<br>");
+	document.write("제품 제조사 >>>"+product["company"]+"<br>");
+	
+	document.write("<hr>");
+	
+	document.write("제품 이름 >>>"+product.name+"<br>");
+	document.write("제품 타입 >>>"+product.type+"<br>");
+	document.write("제품 제조사 >>>"+product.company+"<br>"); 
+	
+	document.write("<hr>");
+	
+	for(let k in product){
+		document.write(k+"의 값 >>"+product[k]+"<br>");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

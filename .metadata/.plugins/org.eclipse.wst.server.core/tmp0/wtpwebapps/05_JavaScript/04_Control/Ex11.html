@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/* 
+		[문제1] 1~100 사이의 숫자 중에서 5의 배수인 경우에는 빨간색으로,
+		7의 배수인 경우에는 초록색으로, 6의 배수인 경우에는 아쿠아(aqua)색으로 화면에 출력해 보세요.
+	*/
+	
+	/* 
+		[문제2] 숫자를 키보드로 입력을 받되, 입력받은 수까지의 홀수의 합과 짝수의 합을 구하여
+		화면에 보여주세요.
+	*/
+	
+	/* 
+		[문제3] 1~100까지의 숫자를 출력하되 3의 배수가 아니고,2 의 배우사 아닌
+		나머지의 숫자를 화면에 보여주세요.
+	*/
+	
+	for(let i=1;i<=100;i++){
+		if(i%5==0){
+			document.write(`<font color="red">${i}</font>&nbsp&nbsp`);
+		}else if(i%7==0){
+			document.write(`<font color="green">${i}</font>&nbsp&nbsp`);
+		}else if(i%6==0){
+			document.write(`<font color="aqua">${i}</font>&nbsp&nbsp`);
+		}else{
+			document.write(`<font>${i}</font>&nbsp&nbsp`); 
+		}
+	}
+	
+
+	document.write(`<br>`);
+	document.write(`<hr>`);
+	
+	let su = Number(prompt("숫자를 입력해 주세요."));
+	let odd=0,even=0;
+
+	for(let i =1;i<=su;i++){
+		if(i%2!=0){
+			odd+=i;
+		}else{
+			even+=i;
+		}
+	}
+	document.write(`1~${su} 까지의 홀수의 합 >>> ${odd}<br>`);
+	document.write(`1~${su} 까지의 짝수의 합 >>> ${even}<br>`);
+	
+
+	document.write(`<br>`);
+	document.write(`<hr>`);
+	
+	for(let i=1;i<=100;i++){
+		if((i%3!=0)&&(i%2!=0)){
+			document.write(`${i}&nbsp&nbsp&nbsp`);
+		}
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

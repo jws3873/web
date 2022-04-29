@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		console.log(document.getElementById("pwd"));
+	}
+     
+	function check(){
+		let userId= document.getElementById("id");
+		let userpwd= document.getElementById("pwd");
+		let username = document.getElementById("name");
+		let userphone = document.getElementById("phone");
+		let useraddr = document.getElementById("addr");
+	
+		
+		// 아이디 입력창 입력 여부 확인 작업
+		if(userId.value == ""){
+			alert("아이디를 입력해 주세요....");
+			userId.focus();
+			return false; // 데이터 전송이 차단됨.
+		}
+		
+		
+		// 비밀번호 입력 창 여부 확인 작업
+		if(userpwd.value == ""){
+			alert("비밀번호를 입력해 주세요....");
+			userpwd.focus();
+			return false;
+		}
+		
+		// 이릅 입력 창 여부 확인 작업
+		if(username.value == ""){
+			alert("이름을 입력해 주세요....");
+			username.focus();
+			return false;
+		}
+		
+		// 연락처 입력 창 여부 확인 작업
+		if(userphone.value == ""){
+			alert("연락처를 입력해 주세요....");
+			userphone.focus();
+			return false;
+		}
+		
+		// 주소 입력 창 여부 확인 작업
+		if(useraddr.value == ""){
+			alert("주소를 입력해 주세요....");
+			useraddr.focus();
+			return false;
+		}
+		
+		return true;
+		
+		
+		
+	}
+
+</script>
+</head>
+<body>
+
+	<div align= "center">
+	
+		<form action="http://www.google.com" 
+				onsubmit="return check()"> <!-- //check함수를 호출 후 그 값을 리턴받는다. -->
+			<table border="1" cellspacing="0">
+				<tr>
+					<th>아이디</th>
+					<td>
+						<input type="text" id="id">
+					</td>
+				
+				</tr>
+				
+				<tr>
+					<th>비밀번호</th>
+					<td>
+						<input type="text" id="pwd">
+					</td>
+				
+				</tr>
+				
+				<tr>
+					<th>이름</th>
+					<td>
+						<input type="text" id="name">
+					</td>
+				
+				</tr>
+				
+				<tr>
+					<th>연락처</th>
+					<td>
+						<input type="text" id="phone">
+					</td>
+				
+				</tr>
+				
+				<tr>
+					<th>주소</th>
+					<td>
+						<input type="text" id="addr">
+					</td>
+				
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="회원가입">
+							&nbsp;&nbsp;&nbsp;	
+						<input type="reset" value="다시작성">					
+					</td> 
+				</tr>
+			</table>
+		</form>
+	
+	</div>
+
+</body>
+</html>

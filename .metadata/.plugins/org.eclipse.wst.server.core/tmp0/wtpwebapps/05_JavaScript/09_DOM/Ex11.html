@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		
+		let header = document.querySelector("#header");
+		
+		// 이벤트 처리 작업
+		header.onclick = function(){
+			alert("글자를 클릭하셨네요.")
+			header.innerHTML = "글자변경";
+		}
+		
+		
+	}
+
+
+</script>
+
+
+</head>
+<body>
+
+	<h1 id="header">HEADER</h1>
+
+</body>
+</html>

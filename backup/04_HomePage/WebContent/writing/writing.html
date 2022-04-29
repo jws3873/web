@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 홈페이지</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+
+// 포그인 페이지를 보여주는 함수
+function login_window() {
+	//형식) window.open("파일경로명","창이름","가로폭/세로 높이")
+	window.open("login/login.html","login","width=380px,height=250px");
+}
+
+function join_window(){
+	window.open("join/join.html","join","width=380px,height=250px")
+}
+</script>
+</head>
+<body>
+	<div id="container" >
+		<header id="head"> <!-- 웹문서의 상단 영역 -->
+			<div id="login">
+				<a href="../index.html">홈</a>
+				<a href="#" onclick="login_window()">로그인</a>
+				<a href="#" onclick="join_window()">회원가입</a>
+			</div> <!-- id="login" end-->
+			
+			<hgroup> <!-- 제목과 부제목을 그룹으로 묶어주는 역할 -->
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes,1596 ~ 1650</h2>
+			</hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 역역 -->
+		<nav id="navi">
+			<ul>
+				<li> <a href="../brith/brith.html">탄 생</a></li>
+				<li> <a href="../writing/writing.html">저 서</a></li>
+				<li> <a href="../philosophy/philosophy.html">철 학</a></li>
+				<li> <a href="../saying/saying.html">명 언</a></li>
+			</ul>
+		</nav>
+		
+		<!-- 웹 문서의 영역 설정 태그  - section 태그는 여러 번 사용 가능. -->
+		<section id="content">
+			<h2 class="title">데카르트 저서</h2>
+			<!-- section영역의 본문 -->
+			<article class="text">
+				<h3>"데카르트 철학의 핵심은 《성찰》이라고 할 수 있다."</h3>
+			
+
+			<div class="container1">
+				<div class="item" style="font-weight: bold">제목</div>
+				<div class="item" style="font-weight: bold">발간년도</div>
+				<div class="item">정신지도규칙 Regulaead directionem ingenii</div>
+				<div class="item">1701년</div>
+				<div class="item">세계 Le Monde</div>
+				<div class="item">1664년</div>
+				<div class="item">방법서설 Discours de la méthode</div>
+				<div class="item">1637년</div>
+				<div class="item">성찰 Meditationes de prima philosophia</div>
+				<div class="item">1641년</div>
+				<div class="item">철학의 원리 Principia philosophiae</div>
+				<div class="item">1644년</div>
+				<div class="item">인간론 Traité de l'homme</div>
+				<div class="item">1664년</div>
+				<div class="item">정념론 Les passions de l'âme</div>
+				<div class="item">1649년</div>
+			</div>
+
+			
+
+				
+			</article>
+		</section>
+		
+		<!-- 문서의 보조내용(알림, 광고) -->
+		<aside id="sidebar">
+			<h3>◐저서 구입◑</h3>
+			<p>저서 구입을 원하시는 분들은 전화 010-1111-1234로
+				연락주시기 바랍니다. </p>
+			<img src="../images/book1.png" width="130" height="160">
+			<img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		<footer id="foot">
+		<p> 글 : 임정훈/ 저술가, 번역기 </p>
+		<address>E-mail:jhehyn@empas.com</address>
+		<p> Copyright &copy; All right reserved </p>
+		</footer> <!-- id="container" end -->
+		
+		
+		
+	</div> <!-- id="container" end -->
+	
+
+</body>
+</html>

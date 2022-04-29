@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 홈페이지</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+
+// 포그인 페이지를 보여주는 함수
+function login_window() {
+	//형식) window.open("파일경로명","창이름","가로폭/세로 높이")
+	window.open("login/login.html","login","width=380px,height=250px");
+}
+
+function join_window(){
+	window.open("join/join.html","join","width=380px,height=250px")
+}
+</script>
+</head>
+<body>
+	<div id="container" >
+		<header id="head"> <!-- 웹문서의 상단 영역 -->
+			<div id="login">
+				<a href="../index.html">홈</a>
+				<a href="#" onclick="login_window()">로그인</a>
+				<a href="#" onclick="join_window()">회원가입</a>
+			</div> <!-- id="login" end-->
+			
+			<hgroup> <!-- 제목과 부제목을 그룹으로 묶어주는 역할 -->
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes,1596 ~ 1650</h2>
+			</hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 역역 -->
+		<nav id="navi">
+			<ul>
+				<li> <a href="../brith/brith.html">탄 생</a></li>
+				<li> <a href="../writing/writing.html">저 서</a></li>
+				<li> <a href="../philosophy/philosophy.html">철 학</a></li>
+				<li> <a href="../saying/saying.html">명 언</a></li>
+			</ul>
+		</nav>
+		
+		<!-- 웹 문서의 영역 설정 태그  - section 태그는 여러 번 사용 가능. -->
+		<section id="content">
+			<h2 class="title">데카르트 탄생</h2>
+			<!-- section영역의 본문 -->
+			<article class="text">
+				<h3>"생애"</h3>
+				<p>"프랑스 투렌 지방(Touraine)의 투르 인근에 있는 소도시 라에, 
+					에서 브르타뉴주의 고등법원 평정관이었던 아버지인 조아킴 데카르트 와 잔 브로샤르부부 사이에서 태어났다." </p>
+				<p> 그의 어머니인 잔 브로샤르는 데카르트를 낳고 1년 1개월 후에 죽게 되고, 태어날 때부터 몸이 좋지 않았던 데카르트 또한 생명이 위태로웠지만 다행히도 살아남는다.
+				        물론 어머니와 같은 결핵 징후를 보이고 있었으며, 어린 시절부터 계속 창백하고 마른 아이였다. </p>
+				        
+				<p>어린 시절에는 친구들이 거의 없었고, 자신을 돌봐주던 간호사와 사팔뜨기 소녀 친구 프랑수아즈가 있었다.</p>
+				<p> 후에 시간이 지난 뒤에도, 데카르트는 이 둘에게 놀랄 만한 정도의 충실함과 헌신을 보였다고 하는데,
+				 심지어 유산을 얻었을 때에도 간호사에게 많은 돈을 주었고, 자신의 일생 동안 프랑수아즈와도 우정을 돈독히 하며 지냈다고 한다.</p>
+				<p> 학문적으로는 능력자였으나, 몸이 많이 약한 편으로 그의 어머니에게서 유전된 듯하다.[8] 이 때문에 데카르트의 아버지는 아들도 아내처럼 일찍 죽을 것을 걱정하여,
+				 그가 학교를 가고 싶다는 것을 말리고 강제로 쉬게 했다. </p>
+				<p> 그래서 8살(또는 10살)이 되던 해에 예수회 계열 학교인 라플레슈(La Flèche)에 입학해 8년을 공부하는데, 몸이 약해 학교 수업을 제대로 듣지 못했다고 한다.</p>
+				<p>그런데 수업을 그렇게 듣지를 못했는데도 철학자들이 대부분 그렇듯 공부는 무지 잘했다. 
+				그런 그의 재능을 꿰뚫어 본 어느 관대한 교장이 수업을 듣는 대신에 그 시간에 데카르트에게 늦게까지 잠을 자는 것을 허락했다.
+				 데카르트의 늦잠 자는 버릇은 이때부터 시작된 듯하다. </p>
+				
+			</article>
+		</section>
+		
+		<!-- 문서의 보조내용(알림, 광고) -->
+		<aside id="sidebar">
+			<h3>◐저서 구입◑</h3>
+			<p>저서 구입을 원하시는 분들은 전화 010-1111-1234로
+				연락주시기 바랍니다. </p>
+			<img src="../images/book1.png" width="130" height="160">
+			<img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		<footer id="foot">
+		<p> 글 : 임정훈/ 저술가, 번역기 </p>
+		<address>E-mail:jhehyn@empas.com</address>
+		<p> Copyright &copy; All right reserved </p>
+		</footer> <!-- id="container" end -->
+		
+		
+		
+	</div> <!-- id="container" end -->
+	
+
+</body>
+</html>

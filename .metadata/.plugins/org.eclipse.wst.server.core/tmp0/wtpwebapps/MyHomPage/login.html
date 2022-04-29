@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LOGIN</title>
+<link rel="stylesheet" href="css/loginstyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script type="text/javascript">
+    function check(){
+        let userid = document.querySelector("#login-id");
+        let userpwd = document.querySelector("#login-pwd");
+        if(userid.value ==""){
+            alert("아이디를 입력해 주세요");
+            userid.focus();
+            return false;
+        }
+        if(userpwd.value ==""){
+            alert("비밀번호를 입력해 주세요");
+            userpwd.focus();
+            return false;
+        }
+    }
+</script>
+</head>
+<body>
+<div id="login-frame">
+    <h2 id="login-title">WONSEOK LAND</h2>
+    <form action=""
+    onsubmit="return check()">
+        <div id="Login-box">
+            <div class="login-line">
+                <span class="login-text">아이디</span>
+                <input class="login-input" id="login-id" type="text"
+                placeholder="id">
+            </div>
+            <div class="login-line">
+                <span class="login-text">비밀번호</span>
+                <input class="login-input" id="login-pwd" type="text"
+                placeholder="password" >
+            </div>
+
+            <div class="login-line" id="button-line">
+                <input class ="button" type="submit" value="로그인" onclick="unload()">
+                <input class="button" type="reset" value="취소">
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #bfd4df;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: #bfd4df;
+    border: 3px solid black;
+}
+#login-title{
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 15px;
+    padding: 2px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+#Login-box{
+    display: flex;
+    flex-direction: column;
+}
+.login-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px 10px;
+}
+
+.login-text{
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-weight: 700;
+    text-align: center;
+    width: 70px;
+}
+
+#button-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button{
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    background-color: transparent;
+    border: 1px solid black;
+    padding-top: 7px;
+    margin: 10px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 80px;
+}
+
+.button:hover{
+    color: white;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		// 문서의 요소를 찾는방법 - 3가지
+		// 3. querySelector(선택자)를 이용하는 방법
+		// 3-1. querySelector(선택자)
+		//		==> 가장 처음 선택되는 문서의 선택자 요소를 가져오는 메서드.
+		// 3-2. querySelectorAll(선택자)
+		//		==> 문서의 선택자 요소 전체를 배열로 가져오는 메서드.
+		
+		let header1 = document.querySelector("#header_1");
+		header1.innerHTML = "querySelector 로 선택된 선택자";
+		
+		/* let pTags = document.querySelectorAll(".text");
+		pTags[0].innerHTML = "querySelectorAll()로 선택된 선택자" */
+		
+		let pTag = document.querySelector(".text");
+		pTag.innerHTML = "querySelector로 선택된 선택자 class가 중복되면 첫번째것만 가져온다."
+		
+	}
+
+
+</script>
+</head>
+<body>
+	<h1 id="header_1">Header1</h1>
+	
+	<h1 id="header_2">Header2</h1>
+	
+	<hr>
+	
+	<h1>Header1</h1>
+	
+	<p class="text">header1내용</p>
+	
+	<hr>
+	
+	<h1>Header2</h1>
+	
+	<p class="text">header2내용</p>
+	
+</body>
+</html>

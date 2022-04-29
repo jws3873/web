@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	/* 
+		[문제1] 1~100 사이의 숫자 중에서 숫자가 4의 배수이면서 동시에
+			6의 배수인 숫자를 화면에 보여주세요.
+			조건) while 반복문을 이용할 것.
+	*/
+	/* 
+		[문제2] 1~100 사이의 숫자 중에서 짝수인 경우 글자색을 파한색으로 
+		화면에 보여주고, 홀수인 경우에는 글자색을 빨간색으로 화면에 보여 주세요.
+		조건) while반복문을 이용할 것
+	*/
+	
+	let su =1;
+	while(su<=100){
+		if((su%4==0)&&(su%6==0)){
+			document.write(`${su} &nbsp;&nbsp;&nbsp;`);
+		}
+		su++;
+	};
+	document.write(`<br>`);
+	document.write(`<hr>`);
+	
+	su=1;
+	while(su<=100){
+		if(su%2==0){
+			document.write(`<span style='color:blue'>${su}</span>&nbsp`);
+		}else{
+			document.write(`<span style='color:red'>${su}</span>&nbsp`);
+		}
+		su++;
+	};
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

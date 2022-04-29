@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	/* 
+		함수를 정의하는 방법(두번째 ) - 무명(익명) 함수
+		무명함수는 이름이 없는 함수.이벤트 처리 등에 자주 사용이 됨.
+		함수를 무명으로 만드는 경우에는 주로 함수를 재사용하지 않는 경우에 사용함.	
+	*/
+	
+	let numbering = function(){
+		for(let i = 1; i<=10; i++){
+			document.write(`i >>> ${i}<br> `);
+		}
+	}
+	
+	numbering;
+	numbering();  // 변수에 들어가 있으니 괄호는 필요없이도 하다 그냥 넣어주자
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

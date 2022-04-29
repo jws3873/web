@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+ .photo{
+ 	position: absolute;
+ 	left: 50px;
+ 	top: 100px;
+ 	
+ 	/* 이미지를 회전을 시키는 속성 */
+ 	/* transform: rotate(-15deg); */
+ 	-moz-transform: rotate(15deg);
+ 	-ms-transform: rotate(15deg);
+ 	-webkit-transform:rotate(15deg);
+ 	-o-transform:rorate(15deg);
+ 
+ }
+</style>
+</head>
+<body>
+	<!-- 
+	 CSS는 모듈들이 많고 표준 규약이 아직 완성이 되지 않는 부분도 많이 있음.
+	 따라서 현재로 계속적으로 개발이 되고 있는 상황임. 하지만 아직 표준규약이 
+	 아닌 속성들은 브라우저에 따라 다른 방식으로 지원이 되기 때문에 속성 이름 
+	 앞에 접두사(prefix)를 붙여서 브라우저 별로 구분을 해 주어야 함.
+	 CSS 권고안에 포함되지 못한 기능이나, CSS 권고안에는 포함되어 있지만 아직 완벽하게 제정된 상태가 아닌 기능을 사용하고자 할 때 벤더 프리픽스를 사용하게 됩니다.
+	 * -webkit- : 크롬, 사파리 브라우저
+	 * -moz- : 모질라, 파이어폭스 브라우저
+	 * -o- : 오페라 브라우저
+	 * -ms- : 인터넷 익스플로러
+	 -->
+	<img class="photo" src="images/img.jpg" alt="튤립 이미지">
+
+</body>
+</html>

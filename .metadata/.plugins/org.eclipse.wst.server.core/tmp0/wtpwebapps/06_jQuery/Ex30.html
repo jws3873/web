@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+ /*
+ 	요소 편집 메서드
+ 	- append() : 선택한 요소 위 마지막 위치에 새 요소를 추가하는 메서드.
+ 			형식) $("요소선택").append("새 요소")
+ 	- appendTo() : 선택한 요소위 마지막 위치에 새 요소를 추가하는 메서드.
+ 			형식) $("새요소").appendTo("요소선택")
+ 	- prepend() : 선택한 요소의 맨 앞위치에 새 요소를 추가하는 메서드.
+ 			형식) $("요소선택").prepend("새 요소")
+ 	- prependTo() : 선택한 위치에 새 요소를 추가하는 메서드.
+ 			형식 ) $("새요소").prependTo("요소선택")
+ */
+ $(function(){
+	 
+	//$(".myList").append("<li>새로운 내용 맨 뒤에 추가</li>");
+	$("<li>새로운 내용 맨 뒤에 추가</li>").appendTo(".myList");
+	
+	//$(".myList").prepend("<li>새로운 내용 맨 앞에 추가</li>");
+	$("<li>새로운 내용 맨 앞에 추가</li>").prependTo(".myList");
+	
+ });
+
+</script>
+</head>
+<body>
+
+	<h1>요소 편집 메서드</h1>
+	
+	<ul class="myList">
+	
+		<li>내용1</li>
+	
+	</ul>
+
+</body>
+</html>

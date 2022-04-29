@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JOIN</title>
+<link rel="stylesheet" href="css/joinstyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script type="text/javascript">
+    function check(){
+        let userid = document.querySelector("#join-id");
+        let userpwd = document.querySelector("#join-pwd");
+        let userpwdcf = document.querySelector("#join-pwdcf");
+        let username = document.querySelector("#join-name");
+        let useremail = document.querySelector("#join-email");
+        let userphone = document.querySelector("#join-phone");
+        if(userid.value==""){
+            alert("아이디를 입력해 주세요")
+            userid.focus();
+            return flase;
+        }
+        if(userpwd.value==""){
+            alert("비밀번호를 입력해 주세요")
+            userpwd.focus();
+            return flase;
+        }
+        if(userpwdcf.value==""){
+            alert("비밀번호 확인을 입력해 주세요")
+            userpwdcf.focus();
+            return flase;
+        }
+        if(useremail.value==""){
+            alert("이메일을 입력해 주세요")
+            useremail.focus();
+            return flase;
+        }
+        if(userphone.value==""){
+            alert("연락처를 입력해 주세요")
+            userphone.focus();
+            return flase;
+        }
+
+    }
+</script>
+</head>
+<body>
+<div id="join-frame">
+    <h2 id="join-title">WONSEOK LAND</h2>
+    <form action="#"
+    onsubmit="return check()">
+        <div id="join-box">
+            <div class="join-textline">User Id</div>
+            <div class="join-inputline">
+                <input type="text" id="join-id">
+            </div>
+            <div class="join-textline">Password</div>
+            <div class="join-inputline">
+                <input type="password" id="join-pwd">
+            </div>
+            <div class="join-textline">Password Confirm</div>
+            <div class="join-inputline">
+                <input type="password" id="join-pwdcf">
+            </div>
+            <div class="join-textline">User Name</div>
+            <div class="join-inputline">
+                <input type="text" id="join-name">
+            </div>
+            <div class="join-textline">User Email</div>
+            <div class="join-inputline">
+                <input type="email" id="join-email">
+
+            <div class="join-textline">User Phone</div>
+            <div class="join-inputline">
+                <input type="text" id="join-phone">
+            </div>
+        </div>
+    </form>     
+
+    <div class="join-line" id="button-line">
+        <input class ="button" type="submit" value="회원가입">
+        <input class="button" type="reset" value="취소">
+    </div>
+
+</div> 
+</body>
+</html>

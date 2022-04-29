@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/* 
+		자바스크립스에서 배열 만드는 방법 - 3가지
+		1. let 배열명 = new Array(원소1, 원소2, 원소3....원소n);
+		2. let 배열명=[원소1, 원소2, 원소3....원소n];
+		3. let 배열명 = new Array();
+		※ 자바스크립트의 배열은 모든 데이터 아비(자료형)을 다 담을 수 있음.
+	*/
+
+	// 방법1 - let 배열명 = new Array(원소1, 원소2, 원소3....원소n);
+	let arr1 = new Array("홍길동","hong",27,true);
+	
+	document.write(`${arr1}<br>`); // 전체 요소 출력
+	
+	document.write(`<hr>`);
+	
+	document.write(`arr1[3]`) // 특정 요소만 출력
+	
+	document.write(`<hr>`);
+	
+	for(let i =0; i<arr1.length;i++){
+		document.write(`arr1[${i}]>>> ${arr1[i]}<br>`);
+	}
+	
+	// 자바스크립트에서의 단축 for 반복문
+	
+	for(let k in arr1){ // 인덱스 값이 넘어간다
+		document.write(`arr1[${k}] 배열 요소 >>> ${arr1[k]}<br>`);
+	}
+	
+	document.write(`<hr>`);
+	
+	
+	// 방법2 - let 배열명=[원소1, 원소2, 원소3....원소n];
+	let arr2 = ["홍길동","hong",27,true];
+	for(let k in arr2){ // 인덱스 값이 넘어간다
+		document.write(`arr2[${k}] 배열 요소 >>> ${arr1[k]}<br>`);
+	}
+	
+	document.write(`<hr>`);
+	
+	//for 반복문을 이용하여 배열을 출력
+	for(let i =0;i<arr2.length;i++){
+		document.write(`arr2[${i}]>>>${arr2[i]}<br>`);
+	}
+	
+	document.write(`<hr>`);
+	// 방법3 let 배열명 = new Array();
+	
+	let arr3 = new Array();
+	arr3[0] = "홍길동";
+	arr3[1] = "hong"
+	arr3[2] = 27;
+	arr3[3] = true;
+	
+	for(let k in arr3){ // 인덱스 값이 넘어간다
+		document.write(`arr3[${k}] 배열 요소 >>> ${arr3[k]}<br>`);
+	}
+	
+	document.write(`<hr>`);
+	
+	document.write(`${arr3[4]}<br>`); // 값이 할당되있지 않으므로 undefined
+	
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

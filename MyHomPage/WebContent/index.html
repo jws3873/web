@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PORTPOLIO</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<script type="text/javascript">
+    function login_window(){
+        window.open("login.html","로그인","width=500px height=240px,top=100, left=600");
+    }
+    function join_window() {
+        window.open("join.html","회원가입","width=500px height=520px,top=100, left=600");
+    }
+</script>
+</head>
+
+<body>
+    <div class="frame">
+
+        <header id="head">
+            <div id="name">
+                CREATIVE JUNG WONSEOK
+            </div>
+
+            <div id="login">
+                <a class="nav-menu" href="#" onclick="login_window()">로그인</a>
+                <a class="nav-menu" href="#" onclick="join_window()">회원가입</a>
+            </div>
+        </header>
+
+
+        <nav class="navigator">
+            <h3 class="time">00:00:00</h3>
+            <ul>
+                <li><a href="index.html" class="nav-menu">WORK</a></li>
+                <li><a href="info.html" class="nav-menu">INFO</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="dashbord">
+            <h1 class="myName">안녕하세요! 제 이름은 <a class="sample">정원석
+            </a>입니다.<br>
+            <a class="highlight type1">다양한 문제</a>를 완벽하게 
+            <a class="highlight type2">해결하는</a>
+            <a class="highlight type3">웹 개발자</a>를 희망합니다.</h1>
+            <p class="wiseSaying"></p>
+        </div>
+
+        
+        <h5 class="recent-menu">RECENT WORKS</h5>
+
+        <article class="recent-works">
+        <div class="article" id = "art1">
+            <img class="thumbnail" id="thumb1" src="images/KKAKKAO TALK.JPG">
+            <div class="article-info">
+                <h3 class="article-name">JavaGUI PROJECT</h3>
+                <p class="article-comment">KKAKKAO TALK 메신저 플랫폼<br>
+                - 본인 계정을 관리하고 친구 관리를 통해 자신만의 메신저를 만들 수 있다.<br>
+                - 채팅창에 내용을 입력할 수 있으며, 필요에 따라 이모티콘 구매가 가능하다</p>
+            </div>
+        </div>
+
+        <div class="article" id = "art2">
+            <div class="article-info">
+                <h3 class="article-name">담당 기능 구현</h3>
+                <p class="article-comment">KKAKKAO TALK 인터페이스 화면 구성<br>
+                - 메인화면에서 각각의 아이콘을 클릭하여 화면 전환 가능.<br>
+                - 친구관리 및 프로필 이미지 수정구현</p>
+            </div>
+            
+
+            <img class="thumbnail" id="thumb2" src="images/KKAKKAO FUNCTION.JPG">
+        </div>
+        </article>
+
+
+        <footer class="footer">
+                <h3 class="contact">CONTACT ME</h3>
+                <div class="links">
+                    <a class="blog" href="https://blog.naver.com/dnjsehfdld" target="_blangk">BLOG</a>
+                    <a class="instargram" href="https://www.instagram.com/jws3873/" target="_blangk">INSTARGRAM</a>
+                </div>
+                <p>Feel free to contact me!</p>
+        </footer>
+    </div>
+    <script src="javascript/clock.js"></script>
+    <script src="javascript/wiseSaying.js"></script>
+
+</body>
+</html>

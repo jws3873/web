@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	window.onload = function(){  
+		
+		let btnChannel1 = document.getElementById("btnChannel1").onclick = function(){
+			let myDiv = document.getElementById("myDiv");
+			myDiv.style.backgroundColor ="yellow";
+			myDiv.style.width ="100px";
+			document.getElementById("str").style.color="red";
+			
+			let span_element = document.createElement("span");
+			span_element.innerHTML = "감사해요";
+			myDiv.appendChild(span_element); //body는 document객체라서 document.body.appendChild()로 추가해야하며
+											// 다른 id나 클래스가 부여된 요소안에 요소를 넣을때는 그냥 id or class명.appendCild()로 추가할 것
+	
+		} 
+	}
+	
+	
+	
+	function go_change(){
+		alert("이벤트 예제입니다.");
+	}
+
+
+</script>
+
+</head>
+<body>
+
+	<div id="myDiv" style = "height: 100px;">
+	
+		<span id="str">안녕</span>하세요!!!
+	</div>
+
+	<input id="btnChannel1" type="button" value="스타일 변경">
+
+
+	<input id="btnChannel2" type="button" value="스타일 변경" onclick="go_change()">
+
+
+</body>
+</html>

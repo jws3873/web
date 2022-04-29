@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+	/* 
+		콘텐츠 탐색 선택자
+		- $("요소선택").filter(필터 요소)
+		: 필터 요소만 선택하는 선택자.
+		
+		- $("요소선택").find(요소선택2)
+		: 요소선택2 만 선택하는 선택자.
+	*/
+	
+	$(function(){
+		// $("요소선택").filter(필터 요소)
+		$("#in_1 p").filter(".text2")
+			.css("background-color","orange");
+		// $("요소선택").find(요소선택2)
+		$("#in_1").find(".text1")
+			.css("background-color","lightgray");
+	});
+
+
+</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<h1>콘텐츠 탐색 선택자</h1>
+		<section id="in_1">
+			<h1>find(), filter()</h1>
+			
+			<p class="text1">내용1</p>
+			
+			<p class="text2">내용2</p>
+		</section>
+	
+	</div>
+
+</body>
+</html>

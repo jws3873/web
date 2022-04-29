@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* CSS 파일에서의 주석*/
+
+/* Ex04.html파일과 Ex05.html 파일에 공통적으로 적용되는 선택자 */
+
+p{
+	
+	color: blue;        /* 글자 색상 */
+	font-size: 20px;    /* 글자 크기 */
+	font-family: 궁서체;  /* 글꼴(글자체)*/
+	font-weight: bold;   /* 글자 굵기 */
+	text-align: center; /* 글자 위치 */
+	
+}
+	body{
+		background-color: #E0E0E0; /* 문서 전체 배경 색상 RGB16진수 값을 기입하여도 가능 
+									CSS에서는 마우스를 가져다 대면 색상을 변경이 가능하다.*/ 
+	}

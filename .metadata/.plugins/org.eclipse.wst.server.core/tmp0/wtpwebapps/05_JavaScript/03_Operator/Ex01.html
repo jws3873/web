@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	// 대입연산자(=), 산술연산자(+,-,*,/)
+	let su1 = 15, su2 = 4, result;
+	
+	result = su1+su2;
+	document.write(`su1 + su2 >>> ${result}<br>`);
+	
+	result = su1-su2;
+	document.write(`su1 - su2 >>> ${result}<br>`);
+	
+	result = su1*su2;
+	document.write(`su1 * su2 >>> ${result}<br>`);
+	
+	result = su1/su2;
+	document.write(`su1 / su2 >>> ${result}<br>`);
+	
+	document.write(`<hr>`);
+	
+	let tab = "<table border = '1' cellspacing = '0'>";
+	// "<tr>";
+	tab += "<tr>"; //tab = tab+"<tr>";
+	
+	tab += "<th>"+su1+"+"+su2+"</th>";
+	tab +="<td>"+(su1+su2)+"</td>";
+	tab +="</tr>";
+	
+	tab += "<tr>"; //tab = tab+"<tr>";
+	
+	tab += "<th>"+su1+"-"+su2+"</th>";
+	tab +="<td>"+(su1-su2)+"</td>";
+	tab +="</tr>";
+	
+	tab += "<tr>"; //tab = tab+"<tr>";
+	
+	tab += "<th>"+su1+"*"+su2+"</th>";
+	tab +="<td>"+(su1*su2)+"</td>";
+	tab +="</tr>";
+	
+	tab += "<tr>"; //tab = tab+"<tr>";
+	
+	tab += "<th>"+su1+"/"+su2+"</th>";
+	tab +="<td>"+(su1/su2)+"</td>";
+	tab +="</tr>";
+	tab +="</table>";
+	
+	document.write(tab);
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

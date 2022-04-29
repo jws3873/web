@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		$(document).mousemove(function(event1,event2){
+			let x = event.pageX;
+			let y = event.pageY;
+			$("h2").text("x좌표 : "+x+ "/y좌표 : "+y+event2);
+		})
+
+		
+	});
+
+	
+
+</script>
+
+
+</head>
+<body>
+	<h2></h2>
+	
+
+</body>
+</html>
